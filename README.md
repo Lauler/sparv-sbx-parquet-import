@@ -50,6 +50,5 @@ following annotations are produced:
 
 - `document`: The document annotation spanning all the texts in one parquet file.
 - `text`: The texts from the specified row (`text_row`) in the parquet file.
-- One annotation `<text_annotation>:<row_name>` for each of the other rows in the parquet file (unless skipped), where
-  `<text_annotation>` is the name of the text annotation (by default `text`) and `<row_name>` is the name of the row in
-  the parquet file.
+- One annotation `text:<row_name>` for each of the other rows in the parquet file (unless skipped), where `<row_name>`
+  is the name of the row in the parquet file.
