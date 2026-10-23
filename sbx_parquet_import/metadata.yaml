@@ -1,0 +1,18 @@
+id: sbx-zxx-import-sparv-parquet
+short_description:
+  eng: Import of corpus data from Parquet
+  swe: Import av korpusdata från Parquet
+task: import
+tools:
+  - name: pyarrow
+    url: "https://pypi.org/project/pyarrow/"
+sparv_processor: parquet_import:parse
+created: 2026-10-23
+updated: 2026-10-23
+description:
+  swe: |-
+    Detta hjälpverktyg gör det möjligt för Sparv att importera Parquet-filer genom att extrahera deras data med hjälp av
+    [pyarrow](https://pypi.org/project/pyarrow/).
+  eng: |-
+    This utility enables Sparv to process Parquet files by extracting their data using
+    [pyarrow](https://pypi.org/project/pyarrow/).

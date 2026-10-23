@@ -1,0 +1,29 @@
+[project]
+name = "sparv-sbx-parquet-import"
+version = "0.1.0"
+description = "Sparv plugin for importing parquet files as input to Sparv"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Språkbanken", email = "sb-info@svenska.gu.se" },
+]
+dependencies = [
+    "sparv>=5.3.0",
+    "pyarrow~=26.0.0",
+]
+entry-points."sparv.plugin" = { sbx_parquet_import = "sbx_parquet_import" }
+
+[project.urls]
+Homepage = "https://github.com/spraakbanken/sparv-sbx-parquet-import/"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["uv_build>=0.13.5"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "sbx_parquet_import"
+module-root = ""
